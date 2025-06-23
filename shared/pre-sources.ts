@@ -31,15 +31,6 @@ export const originSources = {
     color: "blue",
     home: "https://www.zhihu.com",
   },
-  "weibo": {
-    name: "微博",
-    title: "实时热搜",
-    type: "hottest",
-    column: "china",
-    color: "red",
-    interval: Time.Realtime,
-    home: "https://weibo.com",
-  },
   "zaobao": {
     name: "联合早报",
     interval: Time.Common,
@@ -48,36 +39,6 @@ export const originSources = {
     color: "red",
     desc: "来自第三方网站: 早晨报",
     home: "https://www.zaobao.com",
-  },
-  "coolapk": {
-    name: "酷安",
-    type: "hottest",
-    column: "tech",
-    color: "green",
-    title: "今日最热",
-    home: "https://coolapk.com",
-  },
-  "wallstreetcn": {
-    name: "华尔街见闻",
-    color: "blue",
-    column: "finance",
-    home: "https://wallstreetcn.com/",
-    sub: {
-      quick: {
-        type: "realtime",
-        interval: Time.Fast,
-        title: "实时快讯",
-      },
-      news: {
-        title: "最新资讯",
-        interval: Time.Common,
-      },
-      hot: {
-        title: "最热文章",
-        type: "hottest",
-        interval: Time.Common,
-      },
-    },
   },
   "36kr": {
     name: "36氪",
@@ -93,29 +54,6 @@ export const originSources = {
       },
     },
   },
-  "douyin": {
-    name: "抖音",
-    type: "hottest",
-    column: "china",
-    color: "gray",
-    home: "https://www.douyin.com",
-  },
-  "hupu": {
-    name: "虎扑",
-    home: "https://hupu.com",
-    column: "china",
-    title: "主干道热帖",
-    type: "hottest",
-    color: "red",
-  },
-  "tieba": {
-    name: "百度贴吧",
-    title: "热议",
-    column: "china",
-    type: "hottest",
-    color: "blue",
-    home: "https://tieba.baidu.com",
-  },
   "toutiao": {
     name: "今日头条",
     type: "hottest",
@@ -123,12 +61,39 @@ export const originSources = {
     color: "red",
     home: "https://www.toutiao.com",
   },
+  "github": {
+    name: "Github",
+    color: "gray",
+    home: "https://github.com/",
+    column: "tech",
+    sub: {
+      "trending-today": {
+        title: "Today",
+        type: "hottest",
+      },
+    },
+  },
+  "juejin": {
+    name: "稀土掘金",
+    column: "tech",
+    color: "blue",
+    type: "hottest",
+    home: "https://juejin.cn",
+  },
   "ithome": {
     name: "IT之家",
     color: "red",
     column: "tech",
     type: "realtime",
     home: "https://www.ithome.com",
+  },
+  "ifeng": {
+    name: "凤凰网",
+    column: "china",
+    color: "red",
+    type: "hottest",
+    title: "热点资讯",
+    home: "https://www.ifeng.com",
   },
   "thepaper": {
     name: "澎湃新闻",
@@ -138,6 +103,29 @@ export const originSources = {
     title: "热榜",
     color: "gray",
     home: "https://www.thepaper.cn",
+  },
+  "weibo": {
+    name: "微博",
+    title: "实时热搜",
+    type: "hottest",
+    column: "china",
+    color: "red",
+    interval: Time.Realtime,
+    home: "https://weibo.com",
+  },
+  "hackernews": {
+    name: "Hacker News",
+    color: "orange",
+    column: "tech",
+    type: "hottest",
+    home: "https://news.ycombinator.com/",
+  },
+  "douyin": {
+    name: "抖音",
+    type: "hottest",
+    column: "china",
+    color: "gray",
+    home: "https://www.douyin.com",
   },
   "sputniknewscn": {
     name: "卫星通讯社",
@@ -157,6 +145,7 @@ export const originSources = {
     color: "blue",
     column: "tech",
     home: "https://bbs.pcbeta.com",
+    disable: true,
     sub: {
       windows11: {
         title: "Windows 11",
@@ -167,39 +156,6 @@ export const originSources = {
         title: "Windows 资源",
         type: "realtime",
         interval: Time.Fast,
-      },
-    },
-  },
-  "cls": {
-    name: "财联社",
-    color: "red",
-    column: "finance",
-    home: "https://www.cls.cn",
-    sub: {
-      telegraph: {
-        title: "电报",
-        interval: Time.Fast,
-        type: "realtime",
-      },
-      depth: {
-        title: "深度",
-      },
-      hot: {
-        title: "热门",
-        type: "hottest",
-      },
-    },
-  },
-  "xueqiu": {
-    name: "雪球",
-    color: "blue",
-    home: "https://xueqiu.com",
-    column: "finance",
-    sub: {
-      hotstock: {
-        title: "热门股票",
-        interval: Time.Realtime,
-        type: "hottest",
       },
     },
   },
@@ -236,32 +192,6 @@ export const originSources = {
     home: "https://solidot.org",
     interval: Time.Slow,
   },
-  "hackernews": {
-    name: "Hacker News",
-    color: "orange",
-    column: "tech",
-    type: "hottest",
-    home: "https://news.ycombinator.com/",
-  },
-  "producthunt": {
-    name: "Product Hunt",
-    color: "red",
-    column: "tech",
-    type: "hottest",
-    home: "https://www.producthunt.com/",
-  },
-  "github": {
-    name: "Github",
-    color: "gray",
-    home: "https://github.com/",
-    column: "tech",
-    sub: {
-      "trending-today": {
-        title: "Today",
-        type: "hottest",
-      },
-    },
-  },
   "bilibili": {
     name: "哔哩哔哩",
     color: "blue",
@@ -287,6 +217,21 @@ export const originSources = {
       },
     },
   },
+  "baidu": {
+    name: "百度热搜",
+    column: "china",
+    color: "blue",
+    type: "hottest",
+    home: "https://www.baidu.com",
+  },
+  "tieba": {
+    name: "百度贴吧",
+    title: "热议",
+    column: "china",
+    type: "hottest",
+    color: "blue",
+    home: "https://tieba.baidu.com",
+  },
   "kuaishou": {
     name: "快手",
     type: "hottest",
@@ -295,6 +240,48 @@ export const originSources = {
     // cloudflare pages cannot access
     disable: "cf",
     home: "https://www.kuaishou.com",
+  },
+  "wallstreetcn": {
+    name: "华尔街见闻",
+    color: "blue",
+    column: "finance",
+    home: "https://wallstreetcn.com/",
+    sub: {
+      quick: {
+        type: "realtime",
+        interval: Time.Fast,
+        title: "实时快讯",
+      },
+      news: {
+        title: "最新资讯",
+        interval: Time.Common,
+      },
+      hot: {
+        title: "最热文章",
+        type: "hottest",
+        interval: Time.Common,
+      },
+    },
+  },
+  "cls": {
+    name: "财联社",
+    color: "red",
+    column: "finance",
+    home: "https://www.cls.cn",
+    sub: {
+      telegraph: {
+        title: "电报",
+        interval: Time.Fast,
+        type: "realtime",
+      },
+      depth: {
+        title: "深度",
+      },
+      hot: {
+        title: "热门",
+        type: "hottest",
+      },
+    },
   },
   "kaopu": {
     name: "靠谱新闻",
@@ -311,19 +298,12 @@ export const originSources = {
     type: "realtime",
     home: "https://www.jin10.com",
   },
-  "baidu": {
-    name: "百度热搜",
-    column: "china",
-    color: "blue",
-    type: "hottest",
-    home: "https://www.baidu.com",
-  },
   "linuxdo": {
     name: "LINUX DO",
     column: "tech",
     color: "slate",
     home: "https://linux.do/",
-    disable: "cf",
+    disable: true,
     sub: {
       latest: {
         title: "最新",
@@ -349,6 +329,7 @@ export const originSources = {
     color: "red",
     type: "hottest",
     home: "https://www.smzdm.com",
+    disable: true,
   },
   "nowcoder": {
     name: "牛客",
@@ -364,20 +345,21 @@ export const originSources = {
     type: "hottest",
     home: "https://sspai.com",
   },
-  "juejin": {
-    name: "稀土掘金",
-    column: "tech",
-    color: "blue",
-    type: "hottest",
-    home: "https://juejin.cn",
-  },
-  "ifeng": {
-    name: "凤凰网",
+  "hupu": {
+    name: "虎扑",
+    home: "https://hupu.com",
     column: "china",
-    color: "red",
+    title: "主干道热帖",
     type: "hottest",
-    title: "热点资讯",
-    home: "https://www.ifeng.com",
+    color: "red",
+  },
+  "coolapk": {
+    name: "酷安",
+    type: "hottest",
+    column: "tech",
+    color: "green",
+    title: "今日最热",
+    home: "https://coolapk.com",
   },
   "chongbuluo": {
     name: "虫部落",
@@ -395,6 +377,26 @@ export const originSources = {
         type: "hottest",
         interval: Time.Common,
         home: "https://www.chongbuluo.com/forum.php?mod=guide&view=hot",
+      },
+    },
+  },
+  "producthunt": {
+    name: "Product Hunt",
+    color: "red",
+    column: "tech",
+    type: "hottest",
+    home: "https://www.producthunt.com/",
+  },
+  "xueqiu": {
+    name: "雪球",
+    color: "blue",
+    home: "https://xueqiu.com",
+    column: "finance",
+    sub: {
+      hotstock: {
+        title: "热门股票",
+        interval: Time.Realtime,
+        type: "hottest",
       },
     },
   },
