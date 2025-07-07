@@ -199,6 +199,7 @@ export const originSources = {
     sub: {
       "hot-search": {
         title: "热搜",
+        disable: "cf",
         column: "china",
         type: "hottest",
       },
