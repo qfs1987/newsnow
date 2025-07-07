@@ -201,6 +201,7 @@
     "redirect": "bilibili-hot-search",
     "name": "哔哩哔哩",
     "type": "hottest",
+    "disable": "cf",
     "column": "china",
     "home": "https://www.bilibili.com",
     "color": "blue",
@@ -210,6 +211,7 @@
   "bilibili-hot-search": {
     "name": "哔哩哔哩",
     "type": "hottest",
+    "disable": "cf",
     "column": "china",
     "home": "https://www.bilibili.com",
     "color": "blue",
