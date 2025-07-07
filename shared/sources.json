@@ -197,47 +197,6 @@
     "color": "teal",
     "interval": 3600000
   },
-  "bilibili": {
-    "redirect": "bilibili-hot-search",
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "热搜"
-  },
-  "bilibili-hot-search": {
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "热搜"
-  },
-  "bilibili-hot-video": {
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "热门视频"
-  },
-  "bilibili-ranking": {
-    "name": "哔哩哔哩",
-    "type": "hottest",
-    "disable": "cf",
-    "column": "china",
-    "home": "https://www.bilibili.com",
-    "color": "blue",
-    "interval": 1800000,
-    "title": "排行榜"
-  },
   "baidu": {
     "name": "百度热搜",
     "type": "hottest",

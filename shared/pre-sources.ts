@@ -199,20 +199,20 @@ export const originSources = {
     sub: {
       "hot-search": {
         title: "热搜",
-        disable: "cf",
+        disable: true,
         column: "china",
         type: "hottest",
       },
       "hot-video": {
         title: "热门视频",
-        disable: "cf",
+        disable: true,
         column: "china",
         type: "hottest",
       },
       "ranking": {
         title: "排行榜",
         column: "china",
-        disable: "cf",
+        disable: true,
         type: "hottest",
         interval: Time.Common,
       },
